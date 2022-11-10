@@ -6,19 +6,104 @@
   <link href="/dist/output.css" rel="stylesheet">
 </head>
 <body>
-  <!-- 導覽列 -->
-  <header class="container bg-white">
-    <div class="flex my-[33px] justify-between">
-      <div class="md:hidden">
-        <div class="my-1 border border-b w-[18px] border-primary"></div>
-        <div class="mb-1 border border-b w-[18px] border-primary"></div>
-        <div class="border border-b w-[18px] border-primary"></div>
+  <!-- Mobile 導覽列 -->
+  <header class="container md:hidden bg-white align-middle">
+    <div class="flex my-[33px] justify-between items-center">
+      <div>
+        <a href=""></a>
+          <div class="my-1 border border-b w-[18px] border-primary"></div>
+          <div class="mb-1 border border-b w-[18px] border-primary"></div>
+          <div class="border border-b w-[18px] border-primary"></div>
+        </a>
       </div>
-      <img class="hidden md:block w-10" src="/images/logo-dark.png" alt="">
-      <img class="w-[114px] md:w-[171px]" src="./images/logotype-sm-dark.svg" alt="logo-sm">
-      <img class="w-6 h-6" src="/images/shopping_cart.png" alt="">
+      <a href=""><img class="w-[114px] md:w-[171px] md:h-[26.6px] " src="./images/logotype-sm-dark.svg" alt="logo-sm"></a>
+      <a href=""><img class="w-6 h-6" src="/images/shopping_cart.png" alt=""></a>
     </div>
 
   </header>
+  <!-- PC 導覽列 -->
+  <header class="hidden md:block md:container bg-white align-middle">
+    <div class="flex my-[33px] justify-between items-center">
+      <div class="flex align-middle">
+        <a href=""><img class="w-10 mr-4" src="/images/logo-dark.png" alt=""></a>
+        <a href=""><img class="w-[114px] md:w-[171px] md:h-[26.6px] mt-[6px]" src="./images/logotype-sm-dark.svg" alt="logo-sm"></a>
+      </div>
+      <div class="flex align-middle">
+        <a class="mr-8 text-base text-primary font-semibold" href="index">首頁</a>
+        <a class="mr-8 text-base text-primary font-semibold" href="desert">甜點</a>
+        <a class="mr-8 text-base text-primary font-semibold" href="log in">登入</a>
+        <a href=""><img class="w-6 h-6" src="/images/shopping_cart.png" alt="cart"></a>
+      </div>
+    </div>
+
+  </header>
+  <!-- Banner -->
+  <main class="md:container">
+    <!-- Banner-img -->
+    <div class="flex justify-center">
+      <img class="w-[375px] h-[277px] md:w-screen md:h-[496px]" src="/images/home_banner.jpg" alt="">
+    </div>
+    <!-- 本日精選、人氣推薦、新品上市 -->
+    <div class="flex justify-center">
+      <!-- 本日精選 -->
+      <div class="flex justify-center w-[125px] h-[180px] bg-[url('/images/SW02.png')] border-r-[1px] md:w-[200px] lg:w-[259px] lg:h-[256px] md:-mt-20">
+        <div class="flex justify-center w-[125px] h-[180px] bg-primary hover:bg-secondary opacity-80 md:w-[200px] lg:w-[259px] lg:h-[256px]">
+          <p class="tracking-widest text-xl font-light text-white hover:text-primary hover:font-normal writing-lr flex justify-center lg:text-2xl">本日精選</p>
+        </div>
+      </div>
+      <!-- 人氣推薦 -->
+      <div class="flex justify-center w-[125px] h-[180px] bg-[url('/images/SW05.png')] border-r-[1px] md:w-[200px] lg:w-[259px] lg:h-[256px] md:-mt-20">
+        <div class="flex justify-center w-[125px] h-[180px] bg-primary hover:bg-secondary opacity-80 md:w-[200px] lg:w-[259px] lg:h-[256px]">
+          <p class="tracking-widest text-xl font-light text-white hover:text-primary hover:font-normal writing-lr flex justify-center lg:text-2xl">人氣推薦</p>
+        </div>
+      </div>
+
+      <!-- 新品上市 -->
+      <div class="flex justify-center w-[125px] h-[180px] bg-[url('/images/SW03.png')] md:w-[200px] lg:w-[259px] lg:h-[256px] md:-mt-20">
+        <div class="flex justify-center w-[125px] h-[180px] bg-primary hover:bg-secondary opacity-80 md:w-[200px] lg:w-[259px] lg:h-[256px]">
+          <p class="tracking-widest text-xl font-light text-white hover:text-primary hover:font-normal writing-lr flex justify-center lg:text-2xl">新品上市</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <!-- Mobile - 為什麼選擇了做甜點 -->
+  <main class="md:hidden">
+    <!-- Title -->
+    <div class="flex justify-center items-center bg-white">
+      <img class="my-[30px] mx-[90px] w-[196px] h-[60]" src="/images/sm-WhySelect.svg" alt="">
+    </div>
+    <!-- Banner -->
+    <div class="flex justify-center">
+      <div class="w-[375px] h-[250px] bg-[url('/images/SW10.png')] bg-center bg-cover">
+      </div>
+    </div>
+    <!-- Content -->
+    <div class="container py-[30px] flex flex-col justify-center bg-light_plus_primary">
+      <p class="text-base text-light_primary mb-6 font-light">
+        青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
+      </p>
+      <p class="text-base text-light_primary font-light">
+        是非成敗轉頭空，青山依舊在，幾度夕陽紅。白髮漁樵江渚上，古今多少事，都付笑談中。
+      </p>
+    </div>
+  </main>
+  <!-- Pad & PC - 為什麼選擇了做甜點 -->
+  <main class="hidden md:block bg-light_plus_primary h-[420px] mt-20 md:h-[280px]">
+    <div class="md:container flex justify-between">
+      <!-- banner -->
+      <img class="-mt-5 w-[460px] h-[460px] md:w-[320px] md:h-[320px]" src="/images/SW10.png" alt="">
+      <!-- Content -->
+      <div class="flex flex-col justify-center lg:py-[70px]">
+        <p class="text-base text-light_primary font-light writing-rl leading-loose lg:mr-20  md:py-10 md:h-[280px] md:leading-[1.79]">
+          青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。是非成敗轉頭空，青山依舊在，幾度夕陽紅。白髮漁樵江渚上，古今多少事，都付笑談中。
+        </p>
+      </div>
+      <!-- title -->
+      <img class="-mt-5 w-[88px] h-[307px] md:h-[260px]" src="/images/lg-WhySelect.svg" alt="">
+    </div>
+
+
+  </main>
 </body>
 </html>

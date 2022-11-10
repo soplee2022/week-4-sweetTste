@@ -12,7 +12,10 @@ module.exports = {
     },
     container: {
       center: true,
-      padding: '24px',
+      padding: {
+        DEFAULT: '30px',
+        md: '42px',
+      }
     },
     screens: {
       'sm': '375px',
@@ -21,8 +24,8 @@ module.exports = {
       'md': '768px',
       // => @media (min-width: 768px) { ... }
   
-      'lg': '1000px',
-      // => @media (min-width: 1000px) { ... }
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
     },
   },
   plugins: [],
