@@ -593,10 +593,6 @@ video {
   right: 1.25rem;
 }
 
-.right-\[80px\] {
-  right: 80px;
-}
-
 .bottom-\[48px\] {
   bottom: 48px;
 }
@@ -971,24 +967,24 @@ video {
   background-color: rgb(255 225 128 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/images\/SW02\.png\'\)\] {
-  background-image: url('/images/SW02.png');
+.bg-\[url\(\'\.\.\/images\/SW02\.png\'\)\] {
+  background-image: url('../images/SW02.png');
 }
 
-.bg-\[url\(\'\/images\/SW05\.png\'\)\] {
-  background-image: url('/images/SW05.png');
+.bg-\[url\(\'\.\.\/images\/SW05\.png\'\)\] {
+  background-image: url('../images/SW05.png');
 }
 
-.bg-\[url\(\'\/images\/SW03\.png\'\)\] {
-  background-image: url('/images/SW03.png');
+.bg-\[url\(\'\.\.\/images\/SW03\.png\'\)\] {
+  background-image: url('../images/SW03.png');
 }
 
-.bg-\[url\(\'\/images\/SW10\.png\'\)\] {
-  background-image: url('/images/SW10.png');
+.bg-\[url\(\'\.\.\/images\/SW10\.png\'\)\] {
+  background-image: url('../images/SW10.png');
 }
 
-.bg-\[url\(\'\/images\/SW04\.png\'\)\] {
-  background-image: url('/images/SW04.png');
+.bg-\[url\(\'\.\.\/images\/SW04\.png\'\)\] {
+  background-image: url('../images/SW04.png');
 }
 
 .bg-cover {
@@ -1022,11 +1018,6 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.px-\[80px\] {
-  padding-left: 80px;
-  padding-right: 80px;
 }
 
 .px-\[122px\] {
@@ -1224,6 +1215,34 @@ video {
     right: 80px;
   }
 
+  .md\:right-0 {
+    right: 0px;
+  }
+
+  .md\:right-\[60px\] {
+    right: 60px;
+  }
+
+  .md\:right-\[40px\] {
+    right: 40px;
+  }
+
+  .md\:right-\[20px\] {
+    right: 20px;
+  }
+
+  .md\:right-\[30px\] {
+    right: 30px;
+  }
+
+  .md\:right-\[42px\] {
+    right: 42px;
+  }
+
+  .md\:right-\[84px\] {
+    right: 84px;
+  }
+
   .md\:-mt-20 {
     margin-top: -5rem;
   }
@@ -1294,6 +1313,18 @@ video {
 @media (min-width: 1024px) {
   .lg\:right-\[122px\] {
     right: 122px;
+  }
+
+  .lg\:right-0 {
+    right: 0px;
+  }
+
+  .lg\:right-\[300px\] {
+    right: 300px;
+  }
+
+  .lg\:right-\[800px\] {
+    right: 800px;
   }
 
   .lg\:mr-20 {

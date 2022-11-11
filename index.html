@@ -46,20 +46,20 @@
     <!-- 本日精選、人氣推薦、新品上市 -->
     <div class="flex justify-center">
       <!-- 本日精選 -->
-      <div class="flex justify-center w-[125px] h-[180px] bg-[url('/images/SW02.png')] border-r-[1px] md:w-[200px] lg:w-[259px] lg:h-[256px] md:-mt-20">
+      <div class="flex justify-center w-[125px] h-[180px] bg-[url('../images/SW02.png')] border-r-[1px] md:w-[200px] lg:w-[259px] lg:h-[256px] md:-mt-20">
         <div class="flex justify-center w-[125px] h-[180px] bg-primary hover:bg-secondary opacity-80 md:w-[200px] lg:w-[259px] lg:h-[256px]">
           <p class="tracking-widest text-xl font-light text-white hover:text-primary hover:font-normal writing-lr flex justify-center lg:text-2xl">本日精選</p>
         </div>
       </div>
       <!-- 人氣推薦 -->
-      <div class="flex justify-center w-[125px] h-[180px] bg-[url('/images/SW05.png')] border-r-[1px] md:w-[200px] lg:w-[259px] lg:h-[256px] md:-mt-20">
+      <div class="flex justify-center w-[125px] h-[180px] bg-[url('../images/SW05.png')] border-r-[1px] md:w-[200px] lg:w-[259px] lg:h-[256px] md:-mt-20">
         <div class="flex justify-center w-[125px] h-[180px] bg-primary hover:bg-secondary opacity-80 md:w-[200px] lg:w-[259px] lg:h-[256px]">
           <p class="tracking-widest text-xl font-light text-white hover:text-primary hover:font-normal writing-lr flex justify-center lg:text-2xl">人氣推薦</p>
         </div>
       </div>
 
       <!-- 新品上市 -->
-      <div class="flex justify-center w-[125px] h-[180px] bg-[url('/images/SW03.png')] md:w-[200px] lg:w-[259px] lg:h-[256px] md:-mt-20">
+      <div class="flex justify-center w-[125px] h-[180px] bg-[url('../images/SW03.png')] md:w-[200px] lg:w-[259px] lg:h-[256px] md:-mt-20">
         <div class="flex justify-center w-[125px] h-[180px] bg-primary hover:bg-secondary opacity-80 md:w-[200px] lg:w-[259px] lg:h-[256px]">
           <p class="tracking-widest text-xl font-light text-white hover:text-primary hover:font-normal writing-lr flex justify-center lg:text-2xl">新品上市</p>
         </div>
@@ -75,7 +75,7 @@
     </div>
     <!-- Banner -->
     <div class="flex justify-center">
-      <div class="w-[375px] h-[250px] bg-[url('/images/SW10.png')] bg-center bg-cover">
+      <div class="w-[375px] h-[250px] bg-[url('../images/SW10.png')] bg-center bg-cover">
       </div>
     </div>
     <!-- Content -->
@@ -129,7 +129,7 @@
     </div>
     <!-- Banner -->
     <div class="flex justify-center">
-      <div class="w-[375px] h-[250px] bg-[url('/images/SW04.png')] bg-center bg-cover">
+      <div class="w-[375px] h-[250px] bg-[url('../images/SW04.png')] bg-center bg-cover">
       </div>
     </div>
     <!-- Content -->
@@ -333,36 +333,72 @@
       <p class="text-base text-primary tracking-wide">© 2018 Sweetaste* All Rights Reserved</p>
     </div>
   </div>
-  <!-- Pad & PC Footer -->
-  <div class="bg-light_plus_primary hidden md:block relative">
-    <div class="flex justify-between py-[30px] md:px-[80px] lg:px-[122px]">
-      <!-- Left-side -->
-      <div class="flex flex-col justify-start">
-        <div class="flex justify-start mb-[115px]">
-          <a href="">
-            <img class="w-[171px] h-[26px]" src="./images/logotype-sm-dark.svg" alt="footer-logo">
-          </a>
+  <!-- Pad Footer -->
+  <div class="bg-light_plus_primary hidden md:block lg:hidden">
+    <div class="flex justify-between py-[30px] md:container relative">
+      <div class="md:container flex justify-between">
+        <!-- Left-side -->
+        <div class="flex flex-col justify-start">
+          <div class="flex justify-start mb-[115px]">
+            <a href="">
+              <img class="w-[171px] h-[26px]" src="./images/logotype-sm-dark.svg" alt="footer-logo">
+            </a>
+          </div>
+          <div class="mb-[37px]">
+            <p class="text-base text-primary tracking-wide">07-1234-5678</p>
+            <p class="text-base text-primary tracking-wide">sweetaste@email.com</p>
+            <p class="text-base text-primary tracking-wide">800 高雄市新興區幸福路 520 號</p>
+          </div>
+          <div class="flex mb-[23px]">
+            <a href="">
+              <img class="w-8 h-8 mr-2" src="./images/ic-line@.svg" alt="">
+            </a>
+            <a href="">
+              <img class="w-8 h-8" src="./images/ic-facebook.svg" alt="">
+            </a>
+          </div>
         </div>
-        <div class="mb-[37px]">
-          <p class="text-base text-primary tracking-wide">07-1234-5678</p>
-          <p class="text-base text-primary tracking-wide">sweetaste@email.com</p>
-          <p class="text-base text-primary tracking-wide">800 高雄市新興區幸福路 520 號</p>
-        </div>
-        <div class="flex mb-[23px]">
-          <a href="">
-            <img class="w-8 h-8 mr-2" src="./images/ic-line@.svg" alt="">
-          </a>
-          <a href="">
-            <img class="w-8 h-8" src="./images/ic-facebook.svg" alt="">
-          </a>
+        <!-- Right-side -->
+        <img class="w-[59px] h-[218px]" src="./images/text-sm.svg" alt="">
+        <!-- Copy right -->
+        <div class="absolute md:right-[84px] bottom-[48px]">
+          <p class="text-base text-primary tracking-wide">© 2018 Sweetaste* All Rights Reserved</p>
         </div>
       </div>
-      <!-- Right-side -->
-      <img class="w-[59px] h-[218px]" src="./images/text-sm.svg" alt="">
     </div>
-    <div class="absolute md:right-[80px] lg:right-[122px] bottom-[48px]">
-      <p class="text-base text-primary tracking-wide">© 2018 Sweetaste* All Rights Reserved</p>
+  </div>
+  <!-- PC Footer -->
+  <div class="bg-light_plus_primary hidden lg:block">
+    <div class="flex justify-between py-[30px] px-[122px] relative">
+        <!-- Left-side -->
+        <div class="flex flex-col justify-start">
+          <div class="flex justify-start mb-[115px]">
+            <a href="">
+              <img class="w-[171px] h-[26px]" src="./images/logotype-sm-dark.svg" alt="footer-logo">
+            </a>
+          </div>
+          <div class="mb-[37px]">
+            <p class="text-base text-primary tracking-wide">07-1234-5678</p>
+            <p class="text-base text-primary tracking-wide">sweetaste@email.com</p>
+            <p class="text-base text-primary tracking-wide">800 高雄市新興區幸福路 520 號</p>
+          </div>
+          <div class="flex mb-[23px]">
+            <a href="">
+              <img class="w-8 h-8 mr-2" src="./images/ic-line@.svg" alt="">
+            </a>
+            <a href="">
+              <img class="w-8 h-8" src="./images/ic-facebook.svg" alt="">
+            </a>
+          </div>
+        </div>
+        <!-- Right-side -->
+        <img class="w-[59px] h-[218px]" src="./images/text-sm.svg" alt="">
+        <!-- Copy right -->
+        <div class="absolute right-[122px] bottom-[48px]">
+          <p class="text-base text-primary tracking-wide">© 2018 Sweetaste* All Rights Reserved</p>
+        </div>
     </div>
+
   </div>
 </body>
 </html>
