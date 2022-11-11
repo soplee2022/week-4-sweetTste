@@ -601,6 +601,38 @@ video {
   right: 122px;
 }
 
+.right-\[80px\] {
+  right: 80px;
+}
+
+.right-\[100px\] {
+  right: 100px;
+}
+
+.right-\[60px\] {
+  right: 60px;
+}
+
+.right-\[70px\] {
+  right: 70px;
+}
+
+.right-\[66px\] {
+  right: 66px;
+}
+
+.right-\[120px\] {
+  right: 120px;
+}
+
+.right-\[620px\] {
+  right: 620px;
+}
+
+.right-\[20px\] {
+  right: 20px;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -878,6 +910,42 @@ video {
   width: 59px;
 }
 
+.w-\[768px\] {
+  width: 768px;
+}
+
+.w-\[780px\] {
+  width: 780px;
+}
+
+.w-\[1000px\] {
+  width: 1000px;
+}
+
+.w-\[1200px\] {
+  width: 1200px;
+}
+
+.w-\[1300px\] {
+  width: 1300px;
+}
+
+.w-\[1400px\] {
+  width: 1400px;
+}
+
+.w-\[1500px\] {
+  width: 1500px;
+}
+
+.w-\[800px\] {
+  width: 800px;
+}
+
+.max-w-\[768px\] {
+  max-width: 768px;
+}
+
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -995,6 +1063,11 @@ video {
   background-position: center;
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .py-\[30px\] {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -1023,6 +1096,16 @@ video {
 .px-\[122px\] {
   padding-left: 122px;
   padding-right: 122px;
+}
+
+.px-\[100px\] {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.px-\[80px\] {
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 .pl-8 {
@@ -1211,34 +1294,6 @@ video {
     }
   }
 
-  .md\:right-\[80px\] {
-    right: 80px;
-  }
-
-  .md\:right-0 {
-    right: 0px;
-  }
-
-  .md\:right-\[60px\] {
-    right: 60px;
-  }
-
-  .md\:right-\[40px\] {
-    right: 40px;
-  }
-
-  .md\:right-\[20px\] {
-    right: 20px;
-  }
-
-  .md\:right-\[30px\] {
-    right: 30px;
-  }
-
-  .md\:right-\[42px\] {
-    right: 42px;
-  }
-
   .md\:right-\[84px\] {
     right: 84px;
   }
@@ -1300,33 +1355,12 @@ video {
     padding-bottom: 2.5rem;
   }
 
-  .md\:px-\[80px\] {
-    padding-left: 80px;
-    padding-right: 80px;
-  }
-
   .md\:leading-\[1\.79\] {
     line-height: 1.79;
   }
 }
 
 @media (min-width: 1024px) {
-  .lg\:right-\[122px\] {
-    right: 122px;
-  }
-
-  .lg\:right-0 {
-    right: 0px;
-  }
-
-  .lg\:right-\[300px\] {
-    right: 300px;
-  }
-
-  .lg\:right-\[800px\] {
-    right: 800px;
-  }
-
   .lg\:mr-20 {
     margin-right: 5rem;
   }
