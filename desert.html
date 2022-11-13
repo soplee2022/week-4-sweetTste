@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Mobile 導覽列 -->
+    <header class="container md:hidden bg-white align-middle">
+        <div class="flex my-[33px] justify-between items-center">
+            <div>
+                <a href="desert.html"></a>
+                <div class="my-1 border border-b w-[18px] border-primary"></div>
+                <div class="mb-1 border border-b w-[18px] border-primary"></div>
+                <div class="border border-b w-[18px] border-primary"></div>
+                </a>
+            </div>
+            <a href=""><img class="w-[114px] md:w-[171px] md:h-[26.6px] " src="./images/logotype-sm-dark.svg"
+                    alt="logo-sm"></a>
+            <a href=""><img class="w-6 h-6" src="./images/shopping_cart.png" alt=""></a>
+        </div>
+
+    </header>
+    <!-- PC 導覽列 -->
+    <header class="hidden md:block md:container bg-white align-middle">
+        <div class="flex my-[33px] justify-between items-center">
+            <div class="flex align-middle">
+                <a href=""><img class="w-10 mr-4" src="./images/logo-dark.png" alt=""></a>
+                <a href=""><img class="w-[114px] md:w-[171px] md:h-[26.6px] mt-[6px]"
+                        src="./images/logotype-sm-dark.svg" alt="logo-sm"></a>
+            </div>
+            <div class="flex align-middle">
+                <a class="mr-8 text-base text-primary font-semibold" href="index">首頁</a>
+                <a class="mr-8 text-base text-primary font-semibold" href="desert">甜點</a>
+                <a class="mr-8 text-base text-primary font-semibold" href="log in">登入</a>
+                <a href=""><img class="w-6 h-6" src="./images/shopping_cart.png" alt="cart"></a>
+            </div>
+        </div>
+    </header>
+    <!-- Banner -->
+    <main class="md:container">
+        <!-- Banner-img -->
+        <div class="flex justify-center">
+            <img class="w-[375px] h-[277px] md:w-screen object-cover md:h-[496px]" src="./images/banner.png"
+                alt="">
+        </div>
+        <!-- 本日精選、人氣推薦、新品上市 -->
+        <div class="flex justify-center">
+            <!-- 本日精選 -->
+            <div
+                class="flex justify-center w-[125px] h-[180px] bg-[url('../images/SW02.png')] border-r-[1px] md:w-[200px] lg:w-[259px] lg:h-[256px] md:-mt-20">
+                <div
+                    class="flex justify-center w-[125px] h-[180px] bg-primary hover:bg-secondary opacity-80 md:w-[200px] lg:w-[259px] lg:h-[256px]">
+                    <p
+                        class="tracking-widest text-xl font-light text-white hover:text-primary hover:font-normal writing-lr flex justify-center lg:text-2xl">
+                        本日精選</p>
+                </div>
+            </div>
+            <!-- 人氣推薦 -->
+            <div
+                class="flex justify-center w-[125px] h-[180px] bg-[url('../images/SW05.png')] border-r-[1px] md:w-[200px] lg:w-[259px] lg:h-[256px] md:-mt-20">
+                <div
+                    class="flex justify-center w-[125px] h-[180px] bg-primary hover:bg-secondary opacity-80 md:w-[200px] lg:w-[259px] lg:h-[256px]">
+                    <p
+                        class="tracking-widest text-xl font-light text-white hover:text-primary hover:font-normal writing-lr flex justify-center lg:text-2xl">
+                        人氣推薦</p>
+                </div>
+            </div>
+
+            <!-- 新品上市 -->
+            <div
+                class="flex justify-center w-[125px] h-[180px] bg-[url('../images/SW03.png')] md:w-[200px] lg:w-[259px] lg:h-[256px] md:-mt-20">
+                <div
+                    class="flex justify-center w-[125px] h-[180px] bg-primary hover:bg-secondary opacity-80 md:w-[200px] lg:w-[259px] lg:h-[256px]">
+                    <p
+                        class="tracking-widest text-xl font-light text-white hover:text-primary hover:font-normal writing-lr flex justify-center lg:text-2xl">
+                        新品上市</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Mobile 選單 -->
+    <div class="flex justify-center items-center flex-col mb-[30px]">
+        <div class="bg-primary w-[375px]">
+            <p class="text-white text-center py-4 text-2xl font-semibold">甜點類別</p>
+        </div>
+        <div class="bg-light_plus_primary w-[375px]">
+            <p class="text-primary text-center py-4 text-2xl font-semibold">所有甜點(48)</p>
+        </div>
+        <div class="bg-white w-[375px]">
+            <p class="text-primary text-center py-4 text-2xl font-semibold border-b border-light_plus_primary">本日精選(10)</p>
+        </div>
+        <div class="bg-white w-[375px]">
+            <p class="text-primary text-center py-4 text-2xl font-semibold border-b border-light_plus_primary">人氣推薦(26)</p>
+        </div>
+        <div class="bg-white w-[375px]">
+            <p class="text-primary text-center py-4 text-2xl font-semibold border-b border-light_plus_primary">新品上市(12)</p>
+        </div>
+    </div>
+
+    <!-- Mobile 本日精選 -->
+    <div class="mb-[30px] md:hidden lg:hidden container flex flex-col">
+        <div class="border border-light_plus_primary">
+            <!-- img & 本日精選 & like icon -->
+            <div class="relative">
+                <img class="w-full" src="./images/p-2.png" alt="">
+                <div class="absolute top-0 left-5 bg-primary w-[38px] h-[107px] flex items-center">
+                    <p class="text-base text-white writing-lr m-auto">本日精選</p>
+                </div>
+                <img class="w-5 absolute top-5 right-6" src="./images/favorite_border.png" alt="">
+            </div>
+            <!-- 焦糖馬卡龍 & 價錢 -->
+            <div class="flex">
+                <div class="py-[14px] w-[183px]">
+                    <p class="py-4 text-xl font-light text-primary text-center">焦糖馬卡龍</p>
+                </div>
+                <div class="py-[14px] border-l border-l-light_plus_primary w-[133px]">
+                    <p class="py-4 text-xl font-normal text-primary text-center">NT $450</p>
+                </div>
+            </div>
+            <!-- 加入購物車 -->
+            <div class="bg-light_plus_primary">
+                <p class="py-4 text-2xl font-bold text-primary text-center">加入購物車</p>
+            </div>
+        </div>
+    </div>
+    <!-- Pad & PC 本日精選 -->
+    <div class="hidden md:block lg:block mb-[60px]">
+        <div class="flex justify-center md:container">
+            <!-- 商品一 -->
+            <div class="mr-5 border border-light_plus_primary w-[214px] lg:w-[300px]">
+                <!-- img & 本日精選 & like icon -->
+                <div class="relative">
+                    <img class="w-full" src="./images/p-2.png" alt="">
+                    <div class="absolute top-0 left-5 bg-primary w-[38px] h-[107px] flex items-center">
+                        <p class="text-base text-white writing-lr m-auto">本日精選</p>
+                    </div>
+                    <img class="w-5 absolute top-5 right-5" src="./images/favorite_border.png" alt="">
+                </div>
+                <!-- 焦糖馬卡龍 & 價錢 -->
+                <div class="flex">
+                    <div class="py-[14px] w-[183px]">
+                        <p class="py-4 text-xl font-light text-primary text-center">焦糖馬卡龍</p>
+                    </div>
+                    <div class="py-[14px] border-l border-l-light_plus_primary w-[133px]">
+                        <p class="py-4 text-xl font-normal text-primary text-center">NT $450</p>
+                    </div>
+                </div>
+                <!-- 加入購物車 -->
+                <div class="bg-light_plus_primary">
+                    <p class="py-4 text-2xl font-bold text-primary text-center">加入購物車</p>
+                </div>
+            </div>
+            <!-- 商品二 -->
+            <div class="mr-5 border border-light_plus_primary w-[214px] lg:w-[300px]">
+                <!-- img & 本日精選 & like icon -->
+                <div class="relative">
+                    <img class="w-full" src="./images/p-5.png" alt="">
+                    <div class="absolute top-0 left-5 bg-primary w-[38px] h-[107px] flex items-center">
+                        <p class="text-base text-white writing-lr m-auto">本日精選</p>
+                    </div>
+                    <img class="w-5 absolute top-5 right-5" src="./images/favorite_border.png" alt="">
+                </div>
+                <!-- 焦糖馬卡龍 & 價錢 -->
+                <div class="flex">
+                    <div class="py-[14px] w-[183px]">
+                        <p class="py-4 text-xl font-light text-primary text-center">焦糖馬卡龍</p>
+                    </div>
+                    <div class="py-[14px] border-l border-l-light_plus_primary w-[133px]">
+                        <p class="py-4 text-xl font-normal text-primary text-center">NT $450</p>
+                    </div>
+                </div>
+                <!-- 加入購物車 -->
+                <div class="bg-light_plus_primary">
+                    <p class="py-4 text-2xl font-bold text-primary text-center">加入購物車</p>
+                </div>
+            </div>
+            <!-- 商品三 -->
+            <div class="border border-light_plus_primary w-[214px] lg:w-[300px]">
+                <!-- img & 本日精選 & like icon -->
+                <div class="relative">
+                    <img class="w-full" src="./images/p-7.jpg" alt="">
+                    <div class="absolute top-0 left-5 bg-primary w-[38px] h-[107px] flex items-center">
+                        <p class="text-base text-white writing-lr m-auto">本日精選</p>
+                    </div>
+                    <img class="w-5 absolute top-5 right-5" src="./images/favorite_border.png" alt="">
+                </div>
+                <!-- 焦糖馬卡龍 & 價錢 -->
+                <div class="flex">
+                    <div class="py-[14px] w-[183px]">
+                        <p class="py-4 text-xl font-light text-primary text-center">焦糖馬卡龍</p>
+                    </div>
+                    <div class="py-[14px] border-l border-l-light_plus_primary w-[133px]">
+                        <p class="py-4 text-xl font-normal text-primary text-center">NT $450</p>
+                    </div>
+                </div>
+                <!-- 加入購物車 -->
+                <div class="bg-light_plus_primary">
+                    <p class="py-4 text-2xl font-bold text-primary text-center">加入購物車</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Mobile 訂閱 -->
+    <div class="bg-primary md:hidden lg:hidden">
+        <div class="container flex flex-col justify-center py-[30px] items-center">
+            <div class="flex justify-center items-center mb-[30px]">
+                <img class="w-10 h-10" src="./images/logo-light.svg" alt="">
+                <p class="ml-5 text-2xl text-light_plus_primary tracking-wide">訂閱你我的甜蜜郵件</p>
+            </div>
+            <div class="flex w-[315px]">
+                <div class="bg-light_plus_primary w-[251px]">
+                    <img class="my-4 ml-5 w-6 h-6" src="./images/mail-24px.png" alt="">
+                </div>
+                <div class="bg-secondary w-16">
+                    <a href="">
+                        <img class="my-4 w-6 h-6 m-auto" src="./images/arrow_forward-24px.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pad & PC 訂閱 -->
+    <div class="bg-primary  hidden md:block ">
+        <div class="md:container flex justify-center lg:justify-between lg:px-[122px] py-[30px] items-center">
+            <div class="flex justify-center items-center md:mr-10">
+                <img class="w-10 h-10" src="./images/logo-light.svg" alt="">
+                <p class="ml-5 text-2xl text-light_plus_primary tracking-wide">訂閱你我的甜蜜郵件</p>
+            </div>
+            <div class="flex w-[280px] lg:w-[380px]">
+                <div class="bg-light_plus_primary w-[226px] lg:w-[315px]">
+                    <img class="my-4 ml-5 w-6 h-6" src="./images/mail-24px.png" alt="">
+                </div>
+                <div class="bg-secondary w-16">
+                    <a href="">
+                        <img class="my-4 w-6 h-6 m-auto" src="./images/arrow_forward-24px.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Footer -->
+    <div class="bg-light_plus_primary md:hidden lg:hidden">
+        <div class="container flex flex-col justify-start py-[30px]">
+            <div class="flex justify-start mb-[39px]">
+                <a href="">
+                    <img class="w-[171px] h-[26px]" src="./images/logotype-sm-dark.svg" alt="footer-logo">
+                </a>
+            </div>
+            <div class="mb-[37px]">
+                <p class="text-base text-primary tracking-wide">07-1234-5678</p>
+                <p class="text-base text-primary tracking-wide">sweetaste@email.com</p>
+                <p class="text-base text-primary tracking-wide">800 高雄市新興區幸福路 520 號</p>
+            </div>
+            <div class="flex mb-[23px]">
+                <a href="">
+                    <img class="w-8 h-8 mr-2" src="./images/ic-line@.svg" alt="">
+                </a>
+                <a href="">
+                    <img class="w-8 h-8" src="./images/ic-facebook.svg" alt="">
+                </a>
+            </div>
+            <p class="text-base text-primary tracking-wide">© 2018 Sweetaste* All Rights Reserved</p>
+        </div>
+    </div>
+    <!-- Pad Footer -->
+    <div class="bg-light_plus_primary hidden md:block lg:hidden">
+        <div class="flex justify-between py-[30px] md:container relative">
+            <div class="md:container flex justify-between">
+                <!-- Left-side -->
+                <div class="flex flex-col justify-start">
+                    <div class="flex justify-start mb-[115px]">
+                        <a href="">
+                            <img class="w-[171px] h-[26px]" src="./images/logotype-sm-dark.svg" alt="footer-logo">
+                        </a>
+                    </div>
+                    <div class="mb-[37px]">
+                        <p class="text-base text-primary tracking-wide">07-1234-5678</p>
+                        <p class="text-base text-primary tracking-wide">sweetaste@email.com</p>
+                        <p class="text-base text-primary tracking-wide">800 高雄市新興區幸福路 520 號</p>
+                    </div>
+                    <div class="flex mb-[23px]">
+                        <a href="">
+                            <img class="w-8 h-8 mr-2" src="./images/ic-line@.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img class="w-8 h-8" src="./images/ic-facebook.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <!-- Right-side -->
+                <img class="w-[59px] h-[218px]" src="./images/text-sm.svg" alt="">
+                <!-- Copy right -->
+                <div class="absolute md:right-[84px] bottom-[48px]">
+                    <p class="text-base text-primary tracking-wide">© 2018 Sweetaste* All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PC Footer -->
+    <div class="bg-light_plus_primary hidden lg:block">
+        <div class="flex justify-between py-[30px] md:container relative">
+            <div class="w-[1200px] px-[80px] flex justify-between">
+                <!-- Left-side -->
+                <div class="flex flex-col justify-start">
+                    <div class="flex justify-start mb-[115px]">
+                        <a href="">
+                            <img class="w-[171px] h-[26px]" src="./images/logotype-sm-dark.svg" alt="footer-logo">
+                        </a>
+                    </div>
+                    <div class="mb-[37px]">
+                        <p class="text-base text-primary tracking-wide">07-1234-5678</p>
+                        <p class="text-base text-primary tracking-wide">sweetaste@email.com</p>
+                        <p class="text-base text-primary tracking-wide">800 高雄市新興區幸福路 520 號</p>
+                    </div>
+                    <div class="flex mb-[23px]">
+                        <a href="">
+                            <img class="w-8 h-8 mr-2" src="./images/ic-line@.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img class="w-8 h-8" src="./images/ic-facebook.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <!-- Right-side -->
+                <img class="w-[59px] h-[218px]" src="./images/text-sm.svg" alt="">
+                <!-- Copy right -->
+                <div class="absolute right-[120px] bottom-[48px]">
+                    <p class="text-base text-primary tracking-wide">© 2018 Sweetaste* All Rights Reserved</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
