@@ -84,7 +84,7 @@
     </main>
 
     <!-- Mobile 選單 -->
-    <div class="flex justify-center items-center flex-col mb-[30px]">
+    <div class="md:hidden lg:hidden flex justify-center items-center flex-col mb-[30px]">
         <div class="bg-primary w-[375px]">
             <p class="text-white text-center py-4 text-2xl font-semibold">甜點類別</p>
         </div>
@@ -104,7 +104,32 @@
 
     <!-- Mobile 本日精選 -->
     <div class="mb-[30px] md:hidden lg:hidden container flex flex-col">
-        <div class="border border-light_plus_primary">
+        <!-- 商品一 -->
+        <div class="mb-[30px] border border-light_plus_primary">
+            <!-- img & 本日精選 & like icon -->
+            <div class="relative">
+                <img class="w-full" src="./images/p-1.png" alt="">
+                <div class="absolute top-0 left-5 bg-primary w-[38px] h-[107px] flex items-center">
+                    <p class="text-base text-white writing-lr m-auto">本日精選</p>
+                </div>
+                <img class="w-5 absolute top-5 right-6" src="./images/favorite_border.png" alt="">
+            </div>
+            <!-- 焦糖馬卡龍 & 價錢 -->
+            <div class="flex">
+                <div class="py-[14px] w-[183px]">
+                    <p class="py-4 text-xl font-light text-primary text-center">焦糖馬卡龍</p>
+                </div>
+                <div class="py-[14px] border-l border-l-light_plus_primary w-[133px]">
+                    <p class="py-4 text-xl font-normal text-primary text-center">NT $450</p>
+                </div>
+            </div>
+            <!-- 加入購物車 -->
+            <div class="bg-light_plus_primary">
+                <p class="py-4 text-2xl font-bold text-primary text-center">加入購物車</p>
+            </div>
+        </div>
+        <!-- 商品二 -->
+        <div class="mb-[30px] border border-light_plus_primary">
             <!-- img & 本日精選 & like icon -->
             <div class="relative">
                 <img class="w-full" src="./images/p-2.png" alt="">
@@ -127,85 +152,227 @@
                 <p class="py-4 text-2xl font-bold text-primary text-center">加入購物車</p>
             </div>
         </div>
+        <!-- 商品三 -->
+        <div class="border border-light_plus_primary">
+            <!-- img & 本日精選 & like icon -->
+            <div class="relative">
+                <img class="w-full" src="./images/p-3.png" alt="">
+                <div class="absolute top-0 left-5 bg-primary w-[38px] h-[107px] flex items-center">
+                    <p class="text-base text-white writing-lr m-auto">本日精選</p>
+                </div>
+                <img class="w-5 absolute top-5 right-6" src="./images/favorite_border.png" alt="">
+            </div>
+            <!-- 焦糖馬卡龍 & 價錢 -->
+            <div class="flex">
+                <div class="py-[14px] w-[183px]">
+                    <p class="py-4 text-xl font-light text-primary text-center">焦糖馬卡龍</p>
+                </div>
+                <div class="py-[14px] border-l border-l-light_plus_primary w-[133px]">
+                    <p class="py-4 text-xl font-normal text-primary text-center">NT $450</p>
+                </div>
+            </div>
+            <!-- 加入購物車 -->
+            <div class="bg-light_plus_primary">
+                <p class="py-4 text-2xl font-bold text-primary text-center">加入購物車</p>
+            </div>
+        </div>
     </div>
-    <!-- Pad & PC 本日精選 -->
-    <div class="hidden md:block lg:block mb-[60px]">
-        <div class="flex justify-center md:container">
-            <!-- 商品一 -->
-            <div class="mr-5 border border-light_plus_primary w-[214px] lg:w-[300px]">
-                <!-- img & 本日精選 & like icon -->
-                <div class="relative">
-                    <img class="w-full" src="./images/p-2.png" alt="">
-                    <div class="absolute top-0 left-5 bg-primary w-[38px] h-[107px] flex items-center">
-                        <p class="text-base text-white writing-lr m-auto">本日精選</p>
-                    </div>
-                    <img class="w-5 absolute top-5 right-5" src="./images/favorite_border.png" alt="">
+
+    <!-- PC 選單＆商品列表 -->
+    <div class="hidden md:hidden lg:block ">
+        <div class="flex md:container my-[60px]">
+            <!-- PC 選單 -->
+            <div class="flex  items-center flex-col w-[300px]">
+                <div class="bg-primary w-[300px]">
+                    <p class="text-white text-center py-4 text-2xl font-semibold">甜點類別</p>
                 </div>
-                <!-- 焦糖馬卡龍 & 價錢 -->
-                <div class="flex">
-                    <div class="py-[14px] w-[183px]">
-                        <p class="py-4 text-xl font-light text-primary text-center">焦糖馬卡龍</p>
-                    </div>
-                    <div class="py-[14px] border-l border-l-light_plus_primary w-[133px]">
-                        <p class="py-4 text-xl font-normal text-primary text-center">NT $450</p>
-                    </div>
+                <div class="bg-light_plus_primary w-[300px]">
+                    <p class="text-primary text-center py-4 text-2xl font-semibold">所有甜點(48)</p>
                 </div>
-                <!-- 加入購物車 -->
-                <div class="bg-light_plus_primary">
-                    <p class="py-4 text-2xl font-bold text-primary text-center">加入購物車</p>
+                <div class="bg-white w-[300px]">
+                    <p class="text-primary text-center py-4 text-2xl font-semibold border-b border-light_plus_primary">本日精選(10)</p>
+                </div>
+                <div class="bg-white w-[300px]">
+                    <p class="text-primary text-center py-4 text-2xl font-semibold border-b border-light_plus_primary">人氣推薦(26)</p>
+                </div>
+                <div class="bg-white w-[300px]">
+                    <p class="text-primary text-center py-4 text-2xl font-semibold border-b border-light_plus_primary">新品上市(12)</p>
                 </div>
             </div>
-            <!-- 商品二 -->
-            <div class="mr-5 border border-light_plus_primary w-[214px] lg:w-[300px]">
-                <!-- img & 本日精選 & like icon -->
-                <div class="relative">
-                    <img class="w-full" src="./images/p-5.png" alt="">
-                    <div class="absolute top-0 left-5 bg-primary w-[38px] h-[107px] flex items-center">
-                        <p class="text-base text-white writing-lr m-auto">本日精選</p>
+            <!-- Pad & PC 本日精選 -->
+            <div class="flex w-[640px]">
+                <div class="flex justify-center flex-wrap">
+                    <!-- 商品一 -->
+                    <div class="border border-light_plus_primary w-[300px] mr-5 mb-5">
+                        <!-- img & 本日精選 & like icon -->
+                        <div class="relative">
+                            <img class="w-full" src="./images/p-2.png" alt="">
+                            <div class="absolute top-0 left-5 bg-primary w-[38px] h-[107px] flex items-center">
+                                <p class="text-base text-white writing-lr m-auto">本日精選</p>
+                            </div>
+                            <img class="w-5 absolute top-5 right-5" src="./images/favorite_border.png" alt="">
+                        </div>
+                        <!-- 焦糖馬卡龍 & 價錢 -->
+                        <div class="flex">
+                            <div class="py-[14px] w-[183px]">
+                                <p class="py-4 text-xl font-light text-primary text-center">焦糖馬卡龍</p>
+                            </div>
+                            <div class="py-[14px] border-l border-l-light_plus_primary w-[133px]">
+                                <p class="py-4 text-xl font-normal text-primary text-center">NT $450</p>
+                            </div>
+                        </div>
+                        <!-- 加入購物車 -->
+                        <div class="bg-light_plus_primary">
+                            <p class="py-4 text-2xl font-bold text-primary text-center">加入購物車</p>
+                        </div>
                     </div>
-                    <img class="w-5 absolute top-5 right-5" src="./images/favorite_border.png" alt="">
-                </div>
-                <!-- 焦糖馬卡龍 & 價錢 -->
-                <div class="flex">
-                    <div class="py-[14px] w-[183px]">
-                        <p class="py-4 text-xl font-light text-primary text-center">焦糖馬卡龍</p>
+                    <!-- 商品二 -->
+                    <div class="border border-light_plus_primary w-[300px] mb-5">
+                        <!-- img & 本日精選 & like icon -->
+                        <div class="relative">
+                            <img class="w-full" src="./images/p-5.png" alt="">
+                            <div class="absolute top-0 left-5 bg-primary w-[38px] h-[107px] flex items-center">
+                                <p class="text-base text-white writing-lr m-auto">本日精選</p>
+                            </div>
+                            <img class="w-5 absolute top-5 right-5" src="./images/favorite_border.png" alt="">
+                        </div>
+                        <!-- 焦糖馬卡龍 & 價錢 -->
+                        <div class="flex">
+                            <div class="py-[14px] w-[183px]">
+                                <p class="py-4 text-xl font-light text-primary text-center">焦糖馬卡龍</p>
+                            </div>
+                            <div class="py-[14px] border-l border-l-light_plus_primary w-[133px]">
+                                <p class="py-4 text-xl font-normal text-primary text-center">NT $450</p>
+                            </div>
+                        </div>
+                        <!-- 加入購物車 -->
+                        <div class="bg-light_plus_primary">
+                            <p class="py-4 text-2xl font-bold text-primary text-center">加入購物車</p>
+                        </div>
                     </div>
-                    <div class="py-[14px] border-l border-l-light_plus_primary w-[133px]">
-                        <p class="py-4 text-xl font-normal text-primary text-center">NT $450</p>
+                    <!-- 商品三 -->
+                    <div class="border border-light_plus_primary w-[300px] mr-5 mb-5">
+                        <!-- img & 本日精選 & like icon -->
+                        <div class="relative">
+                            <img class="w-full" src="./images/p-7.jpg" alt="">
+                            <div class="absolute top-0 left-5 bg-primary w-[38px] h-[107px] flex items-center">
+                                <p class="text-base text-white writing-lr m-auto">本日精選</p>
+                            </div>
+                            <img class="w-5 absolute top-5 right-5" src="./images/favorite_border.png" alt="">
+                        </div>
+                        <!-- 焦糖馬卡龍 & 價錢 -->
+                        <div class="flex">
+                            <div class="py-[14px] w-[183px]">
+                                <p class="py-4 text-xl font-light text-primary text-center">焦糖馬卡龍</p>
+                            </div>
+                            <div class="py-[14px] border-l border-l-light_plus_primary w-[133px]">
+                                <p class="py-4 text-xl font-normal text-primary text-center">NT $450</p>
+                            </div>
+                        </div>
+                        <!-- 加入購物車 -->
+                        <div class="bg-light_plus_primary">
+                            <p class="py-4 text-2xl font-bold text-primary text-center">加入購物車</p>
+                        </div>
                     </div>
-                </div>
-                <!-- 加入購物車 -->
-                <div class="bg-light_plus_primary">
-                    <p class="py-4 text-2xl font-bold text-primary text-center">加入購物車</p>
-                </div>
-            </div>
-            <!-- 商品三 -->
-            <div class="border border-light_plus_primary w-[214px] lg:w-[300px]">
-                <!-- img & 本日精選 & like icon -->
-                <div class="relative">
-                    <img class="w-full" src="./images/p-7.jpg" alt="">
-                    <div class="absolute top-0 left-5 bg-primary w-[38px] h-[107px] flex items-center">
-                        <p class="text-base text-white writing-lr m-auto">本日精選</p>
+                    <!-- 商品四 -->
+                    <div class="border border-light_plus_primary w-[300px] mb-5">
+                        <!-- img & 本日精選 & like icon -->
+                        <div class="relative">
+                            <img class="w-full" src="./images/p-7.jpg" alt="">
+                            <div class="absolute top-0 left-5 bg-primary w-[38px] h-[107px] flex items-center">
+                                <p class="text-base text-white writing-lr m-auto">本日精選</p>
+                            </div>
+                            <img class="w-5 absolute top-5 right-5" src="./images/favorite_border.png" alt="">
+                        </div>
+                        <!-- 焦糖馬卡龍 & 價錢 -->
+                        <div class="flex">
+                            <div class="py-[14px] w-[183px]">
+                                <p class="py-4 text-xl font-light text-primary text-center">焦糖馬卡龍</p>
+                            </div>
+                            <div class="py-[14px] border-l border-l-light_plus_primary w-[133px]">
+                                <p class="py-4 text-xl font-normal text-primary text-center">NT $450</p>
+                            </div>
+                        </div>
+                        <!-- 加入購物車 -->
+                        <div class="bg-light_plus_primary">
+                            <p class="py-4 text-2xl font-bold text-primary text-center">加入購物車</p>
+                        </div>
                     </div>
-                    <img class="w-5 absolute top-5 right-5" src="./images/favorite_border.png" alt="">
-                </div>
-                <!-- 焦糖馬卡龍 & 價錢 -->
-                <div class="flex">
-                    <div class="py-[14px] w-[183px]">
-                        <p class="py-4 text-xl font-light text-primary text-center">焦糖馬卡龍</p>
+                    <!-- 商品五 -->
+                    <div class="border border-light_plus_primary w-[300px] mr-5 mb-5">
+                        <!-- img & 本日精選 & like icon -->
+                        <div class="relative">
+                            <img class="w-full" src="./images/p-7.jpg" alt="">
+                            <div class="absolute top-0 left-5 bg-primary w-[38px] h-[107px] flex items-center">
+                                <p class="text-base text-white writing-lr m-auto">本日精選</p>
+                            </div>
+                            <img class="w-5 absolute top-5 right-5" src="./images/favorite_border.png" alt="">
+                        </div>
+                        <!-- 焦糖馬卡龍 & 價錢 -->
+                        <div class="flex">
+                            <div class="py-[14px] w-[183px]">
+                                <p class="py-4 text-xl font-light text-primary text-center">焦糖馬卡龍</p>
+                            </div>
+                            <div class="py-[14px] border-l border-l-light_plus_primary w-[133px]">
+                                <p class="py-4 text-xl font-normal text-primary text-center">NT $450</p>
+                            </div>
+                        </div>
+                        <!-- 加入購物車 -->
+                        <div class="bg-light_plus_primary">
+                            <p class="py-4 text-2xl font-bold text-primary text-center">加入購物車</p>
+                        </div>
                     </div>
-                    <div class="py-[14px] border-l border-l-light_plus_primary w-[133px]">
-                        <p class="py-4 text-xl font-normal text-primary text-center">NT $450</p>
+                    <!-- 商品六 -->
+                    <div class="border border-light_plus_primary w-[300px] mb-5">
+                        <!-- img & 本日精選 & like icon -->
+                        <div class="relative">
+                            <img class="w-full" src="./images/p-7.jpg" alt="">
+                            <div class="absolute top-0 left-5 bg-primary w-[38px] h-[107px] flex items-center">
+                                <p class="text-base text-white writing-lr m-auto">本日精選</p>
+                            </div>
+                            <img class="w-5 absolute top-5 right-5" src="./images/favorite_border.png" alt="">
+                        </div>
+                        <!-- 焦糖馬卡龍 & 價錢 -->
+                        <div class="flex">
+                            <div class="py-[14px] w-[183px]">
+                                <p class="py-4 text-xl font-light text-primary text-center">焦糖馬卡龍</p>
+                            </div>
+                            <div class="py-[14px] border-l border-l-light_plus_primary w-[133px]">
+                                <p class="py-4 text-xl font-normal text-primary text-center">NT $450</p>
+                            </div>
+                        </div>
+                        <!-- 加入購物車 -->
+                        <div class="bg-light_plus_primary">
+                            <p class="py-4 text-2xl font-bold text-primary text-center">加入購物車</p>
+                        </div>
                     </div>
-                </div>
-                <!-- 加入購物車 -->
-                <div class="bg-light_plus_primary">
-                    <p class="py-4 text-2xl font-bold text-primary text-center">加入購物車</p>
                 </div>
             </div>
         </div>
-
     </div>
+
+
+
+    <!-- Mobile 頁數列表 -->
+    <div class="flex m-auto border border-light_plus_primary w-[300px] mb-[30px]">
+        <div class="w-[60px] h-[60px] flex justify-center items-center border-x-[0.5px] border-x-light_plus_primary hover:bg-light_primary">
+            <img class="w-6 h-6" src="/images/arrow_left.png" alt="">
+        </div>
+        <div class="w-[60px] h-[60px] flex justify-center items-center border-x-[0.5px] border-x-light_plus_primary hover:bg-primary">
+            <p class="text-xl text-primary font-light hover:font-semibold hover:text-white">1</p>
+        </div>
+        <div class="w-[60px] h-[60px] flex justify-center items-center border-x-[0.5px] border-x-light_plus_primary hover:bg-primary">
+            <p class="text-xl text-primary font-light hover:font-semibold hover:text-white">2</p>
+        </div>
+        <div class="w-[60px] h-[60px] flex justify-center items-center border-x-[0.5px] border-x-light_plus_primary hover:bg-primary">
+            <p class="text-xl text-primary font-light hover:font-semibold hover:text-white">3</p>
+        </div>
+        <div class="w-[60px] h-[60px] flex justify-center items-center border-x-[0.5px] border-x-light_plus_primary hover:bg-light_primary">
+            <img class="w-6 h-6" src="/images/arrow_right.png" alt="">
+        </div>
+    </div>
+
+
 
     <!-- Mobile 訂閱 -->
     <div class="bg-primary md:hidden lg:hidden">
