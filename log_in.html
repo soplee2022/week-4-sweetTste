@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./dist/output.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Mobile 導覽列 -->
+  <header class="container md:hidden bg-white align-middle">
+    <div class="flex my-[33px] justify-between items-center">
+      <div>
+        <a href=""></a>
+          <div class="my-1 border border-b w-[18px] border-primary"></div>
+          <div class="mb-1 border border-b w-[18px] border-primary"></div>
+          <div class="border border-b w-[18px] border-primary"></div>
+        </a>
+      </div>
+      <a href="log_in.html"><img class="w-[114px] md:w-[171px] md:h-[26.6px] " src="./images/logotype-sm-dark.svg" alt="logo-sm"></a>
+      <a href=""><img class="w-6 h-6" src="./images/shopping_cart.png" alt=""></a>
+    </div>
+  </header>
+  <!-- PC 導覽列 -->
+  <header class="hidden md:block md:container bg-white align-middle">
+    <div class="flex my-[33px] justify-between items-center">
+      <div class="flex align-middle">
+        <a href=""><img class="w-10 mr-4" src="./images/logo-dark.png" alt=""></a>
+        <a href=""><img class="w-[114px] md:w-[171px] md:h-[26.6px] mt-[6px]" src="./images/logotype-sm-dark.svg" alt="logo-sm"></a>
+      </div>
+      <div class="flex align-middle">
+        <a class="mr-8 text-base text-primary font-semibold" href="index.html">首頁</a>
+        <a class="mr-8 text-base text-primary font-semibold" href="desert.html">甜點</a>
+        <a class="mr-8 text-base text-primary font-semibold" href="log_in.html">登入</a>
+        <a href=""><img class="w-6 h-6" src="./images/shopping_cart.png" alt="cart"></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile 會員登入 -->
+  <div class="bg-primary md:hidden lg:hidden">
+    <div class="flex justify-center">
+      <p class="text-4xl py-[30px] font-semibold text-white">會員登入</p>
+    </div>
+    <!-- 3 btn -->
+    <div class="bg-light_plus_primary flex justify-center p-[30px]">
+      <ul class="flex bg-white">
+        <li class="border-x-[0.5px] border-x-light_plus_primary w-[105px] h-[56px] flex justify-center items-center">
+          <a href=""><img class="h-4" src="/images/ic-facebook-logotype.png" alt=""></a>
+        </li>
+        <li class="border-x-[0.5px] border-x-light_plus_primary w-[105px] h-[56px] flex justify-center items-center">
+          <a href=""><img class="h-[23px]" src="/images/ic-google.png" alt=""></a>
+        </li>
+        <li class="border-x-[0.5px] border-x-light_plus_primary w-[105px] h-[56px] flex justify-center items-center">
+          <a href=""><img class="h-[18px]" src="/images/ic-yahoo.png" alt=""></a>
+        </li>
+      </ul>
+
+    </div>
+    <!-- 輸入帳密 -->
+    <div class="container flex flex-col justify-center py-[30px] items-center">
+      <form>
+        <input type="text" name="" id="" value="電子信箱/手機號碼" class="bg-light_plus_primary w-[315px] text-light_primary font-light text-base h-[56px] mb-4">
+        <input type="text" name="" id="" value="請輸入使用者密碼" class="bg-light_plus_primary w-[315px] text-light_primary font-light text-base h-[56px] mb-4">
+        <div class="flex items-center">
+          <input type="checkbox" id="" name="" value="記住我" class="w-4 h-4 mr-2 border-0 rounded-none">
+          <label for="" class="text-white text-base text-light_plus_primary">記住我</label>
+        </div>
+        
+      </form>
+    </div>
+    <!-- 登入帳號 -->
+    <div class="flex justify-center bg-secondary">
+      <p class="text-2xl py-4 font-semibold text-primary">登入帳號</p>
+    </div>
+  </div>
+
+  <!-- Mobile 訂閱 -->
+  <div class="bg-primary md:hidden lg:hidden">
+    <div class="container flex flex-col justify-center py-[30px] items-center">
+      <div class="flex justify-center items-center mb-[30px]">
+        <img class="w-10 h-10" src="./images/logo-light.svg" alt="">
+        <p class="ml-5 text-2xl text-light_plus_primary tracking-wide">訂閱你我的甜蜜郵件</p>
+      </div>
+      <div class="flex w-[315px]">
+        <div class="bg-light_plus_primary w-[251px]">
+          <img class="my-4 ml-5 w-6 h-6" src="./images/mail-24px.png" alt="">
+        </div>
+        <div class="bg-secondary w-16">
+          <a href="">
+            <img class="my-4 w-6 h-6 m-auto" src="./images/arrow_forward-24px.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Pad & PC 訂閱 -->
+  <div class="bg-primary  hidden md:block ">
+    <div class="md:container flex justify-center lg:justify-between lg:px-[122px] py-[30px] items-center">
+      <div class="flex justify-center items-center md:mr-10">
+        <img class="w-10 h-10" src="./images/logo-light.svg" alt="">
+        <p class="ml-5 text-2xl text-light_plus_primary tracking-wide">訂閱你我的甜蜜郵件</p>
+      </div>
+      <div class="flex w-[280px] lg:w-[380px]">
+        <div class="bg-light_plus_primary w-[226px] lg:w-[315px]">
+          <img class="my-4 ml-5 w-6 h-6" src="./images/mail-24px.png" alt="">
+        </div>
+        <div class="bg-secondary w-16">
+          <a href="">
+            <img class="my-4 w-6 h-6 m-auto" src="./images/arrow_forward-24px.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Mobile Footer -->
+  <div class="bg-light_plus_primary md:hidden lg:hidden">
+    <div class="container flex flex-col justify-start py-[30px]">
+      <div class="flex justify-start mb-[39px]">
+        <a href="">
+          <img class="w-[171px] h-[26px]" src="./images/logotype-sm-dark.svg" alt="footer-logo">
+        </a>
+      </div>
+      <div class="mb-[37px]">
+        <p class="text-base text-primary tracking-wide">07-1234-5678</p>
+        <p class="text-base text-primary tracking-wide">sweetaste@email.com</p>
+        <p class="text-base text-primary tracking-wide">800 高雄市新興區幸福路 520 號</p>
+      </div>
+      <div class="flex mb-[23px]">
+        <a href="">
+          <img class="w-8 h-8 mr-2" src="./images/ic-line@.svg" alt="">
+        </a>
+        <a href="">
+          <img class="w-8 h-8" src="./images/ic-facebook.svg" alt="">
+        </a>
+      </div>
+      <p class="text-base text-primary tracking-wide">© 2018 Sweetaste* All Rights Reserved</p>
+    </div>
+  </div>
+  <!-- Pad Footer -->
+  <div class="bg-light_plus_primary hidden md:block lg:hidden">
+    <div class="flex justify-between py-[30px] md:container relative">
+      <div class="md:container flex justify-between">
+        <!-- Left-side -->
+        <div class="flex flex-col justify-start">
+          <div class="flex justify-start mb-[115px]">
+            <a href="">
+              <img class="w-[171px] h-[26px]" src="./images/logotype-sm-dark.svg" alt="footer-logo">
+            </a>
+          </div>
+          <div class="mb-[37px]">
+            <p class="text-base text-primary tracking-wide">07-1234-5678</p>
+            <p class="text-base text-primary tracking-wide">sweetaste@email.com</p>
+            <p class="text-base text-primary tracking-wide">800 高雄市新興區幸福路 520 號</p>
+          </div>
+          <div class="flex mb-[23px]">
+            <a href="">
+              <img class="w-8 h-8 mr-2" src="./images/ic-line@.svg" alt="">
+            </a>
+            <a href="">
+              <img class="w-8 h-8" src="./images/ic-facebook.svg" alt="">
+            </a>
+          </div>
+        </div>
+        <!-- Right-side -->
+        <img class="w-[59px] h-[218px]" src="./images/text-sm.svg" alt="">
+        <!-- Copy right -->
+        <div class="absolute md:right-[84px] bottom-[48px]">
+          <p class="text-base text-primary tracking-wide">© 2018 Sweetaste* All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- PC Footer -->
+  <div class="bg-light_plus_primary hidden lg:block">
+    <div class="flex justify-between py-[30px] md:container relative">
+      <div class="w-[1200px] px-[80px] flex justify-between">
+        <!-- Left-side -->
+        <div class="flex flex-col justify-start">
+          <div class="flex justify-start mb-[115px]">
+            <a href="">
+              <img class="w-[171px] h-[26px]" src="./images/logotype-sm-dark.svg" alt="footer-logo">
+            </a>
+          </div>
+          <div class="mb-[37px]">
+            <p class="text-base text-primary tracking-wide">07-1234-5678</p>
+            <p class="text-base text-primary tracking-wide">sweetaste@email.com</p>
+            <p class="text-base text-primary tracking-wide">800 高雄市新興區幸福路 520 號</p>
+          </div>
+          <div class="flex mb-[23px]">
+            <a href="">
+              <img class="w-8 h-8 mr-2" src="./images/ic-line@.svg" alt="">
+            </a>
+            <a href="">
+              <img class="w-8 h-8" src="./images/ic-facebook.svg" alt="">
+            </a>
+          </div>
+        </div>
+        <!-- Right-side -->
+        <img class="w-[59px] h-[218px]" src="./images/text-sm.svg" alt="">
+        <!-- Copy right -->
+        <div class="absolute right-[120px] bottom-[48px]">
+          <p class="text-base text-primary tracking-wide">© 2018 Sweetaste* All Rights Reserved</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+</html>
