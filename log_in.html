@@ -36,43 +36,74 @@
     </div>
   </header>
 
-  <!-- Mobile 會員登入 -->
-  <div class="bg-primary md:hidden lg:hidden">
-    <div class="flex justify-center">
-      <p class="text-4xl py-[30px] font-semibold text-white">會員登入</p>
-    </div>
-    <!-- 3 btn -->
-    <div class="bg-light_plus_primary flex justify-center p-[30px]">
-      <ul class="flex bg-white">
-        <li class="border-x-[0.5px] border-x-light_plus_primary w-[105px] h-[56px] flex justify-center items-center">
-          <a href=""><img class="h-4" src="/images/ic-facebook-logotype.png" alt=""></a>
-        </li>
-        <li class="border-x-[0.5px] border-x-light_plus_primary w-[105px] h-[56px] flex justify-center items-center">
-          <a href=""><img class="h-[23px]" src="/images/ic-google.png" alt=""></a>
-        </li>
-        <li class="border-x-[0.5px] border-x-light_plus_primary w-[105px] h-[56px] flex justify-center items-center">
-          <a href=""><img class="h-[18px]" src="/images/ic-yahoo.png" alt=""></a>
-        </li>
-      </ul>
-
-    </div>
-    <!-- 輸入帳密 -->
-    <div class="container flex flex-col justify-center py-[30px] items-center">
-      <form>
-        <input type="text" name="" id="" value="電子信箱/手機號碼" class="bg-light_plus_primary w-[315px] text-light_primary font-light text-base h-[56px] mb-4">
-        <input type="text" name="" id="" value="請輸入使用者密碼" class="bg-light_plus_primary w-[315px] text-light_primary font-light text-base h-[56px] mb-4">
-        <div class="flex items-center">
-          <input type="checkbox" id="" name="" value="記住我" class="w-4 h-4 mr-2 border-0 rounded-none">
-          <label for="" class="text-white text-base text-light_plus_primary">記住我</label>
+  <!-- 會員登入 -->
+  <div class="flex justify-center md:container">
+    <!-- left side -->
+    <div class="bg-primary w-[375px] lg:w-[390px] md:w-[342px] mt-[60px] md:mb-[60px]">
+      <div class="flex justify-center">
+        <p class="text-4xl py-[30px] font-semibold text-white">會員登入</p>
+      </div>
+      <!-- 3 btn -->
+      <div class="md:hidden lg:hidden">
+        <div class="bg-light_plus_primary flex justify-center p-[30px]">
+          <ul class="flex bg-white">
+            <li class="border-x-[0.5px] border-x-light_plus_primary w-[105px] h-[56px] flex justify-center items-center">
+              <a href=""><img class="h-4" src="/images/ic-facebook-logotype.png" alt=""></a>
+            </li>
+            <li class="border-x-[0.5px] border-x-light_plus_primary w-[105px] h-[56px] flex justify-center items-center">
+              <a href=""><img class="h-[23px]" src="/images/ic-google.png" alt=""></a>
+            </li>
+            <li class="border-x-[0.5px] border-x-light_plus_primary w-[105px] h-[56px] flex justify-center items-center">
+              <a href=""><img class="h-[18px]" src="/images/ic-yahoo.png" alt=""></a>
+            </li>
+          </ul>
+    
         </div>
-        
-      </form>
+      </div>
+      <!-- 輸入帳密 -->
+      <div class="container flex flex-col justify-center py-[30px] items-center">
+        <form>
+          <label for="" class="flex bg-light_plus_primary lg:w-[315px] md:w-[270px] m-auto mb-4">
+            <img class="w-6 h-6 my-4 mx-5" src="./images/user-solid.svg" alt="">
+            <input type="text" name="" id="" value="電子信箱/手機號碼" class="bg-light_plus_primary w-[251px] text-light_primary font-light text-base h-[56px]">
+          </label>
+          <label for="" class="flex bg-light_plus_primary lg:w-[315px] md:w-[270px] m-auto mb-4">
+            <img class="w-6 h-6 my-4 mx-5" src="./images/key-solid.svg" alt="">
+            <input type="text" name="" id="" value="請輸入使用者密碼" class="bg-light_plus_primary w-[251px] text-light_primary font-light text-base h-[56px]">
+          </label>
+          <div class="flex items-center">
+            <input type="checkbox" id="" name="" value="記住我" class="w-4 h-4 mr-2 border-0 rounded-none">
+            <label for="" class="text-white text-base text-light_plus_primary">記住我</label>
+          </div>
+          
+        </form>
+      </div>
+      <!-- 登入帳號 -->
+      <div class="flex justify-center bg-secondary">
+        <p class="text-2xl py-4 font-semibold text-primary">登入帳號</p>
+      </div>
     </div>
-    <!-- 登入帳號 -->
-    <div class="flex justify-center bg-secondary">
-      <p class="text-2xl py-4 font-semibold text-primary">登入帳號</p>
+    <!-- right side -->
+    <div class="hidden md:block lg:block mt-[75px]">
+      <div class="bg-light_plus_primary flex flex-col justify-center lg:w-[390px] md:w-[342px] py-10">
+        <p class="text-2xl text-light_primary font-light m-auto mb-9">——連結社群帳號——</p>
+        <ul class="lg:w-[330px] md:w-[272px] space-y-[16px] m-auto">
+          <li class="bg-white flex justify-center h-14 items-center">
+            <img class="h-5" src="/images/ic-facebook-logotype.png" alt="">
+          </li>
+          <li class="bg-white flex justify-center h-14 items-center">
+            <img class="h-5" src="/images/ic-google.png" alt="">
+          </li>
+          <li class="bg-white flex justify-center h-14 items-center">
+            <img class="h-5" src="/images/ic-yahoo.png" alt="">
+          </li>
+        </ul>
+      </div>
     </div>
+
   </div>
+
+
 
   <!-- Mobile 訂閱 -->
   <div class="bg-primary md:hidden lg:hidden">
